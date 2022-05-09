@@ -15,7 +15,7 @@ export default class Keyboard {
         const keyObj = keys[this.keysLayout].find((key) => key.code === code);
         if (keyObj) {
           const keyButton = new Key(keyObj);
-          keyboardRow.node.appendChild(keyButton.button);
+          keyboardRow.node.appendChild(keyButton.button.node);
         }
       });
     });
