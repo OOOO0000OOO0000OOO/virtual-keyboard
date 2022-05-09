@@ -1,706 +1,678 @@
-export default [
-  {
-    code: 'Backquote',
-    en: {
-      small: '`',
-      shift: '~',
-    },
-    ru: {
+export default {
+  ru: [
+    {
+      code: 'Backquote',
       small: 'ё',
       shift: 'Ё',
     },
-  },
-  {
-    code: 'Digit1',
-    en: {
+    {
+      code: 'Digit1',
       small: '1',
       shift: '!',
     },
-    ru: {
-      small: '1',
-      shift: '!',
-    },
-  },
-  {
-    code: 'Digit2',
-    en: {
-      small: '2',
-      shift: '@',
-    },
-    ru: {
+    {
+      code: 'Digit2',
       small: '2',
       shift: '"',
     },
-  },
-  {
-    code: 'Digit3',
-    en: {
-      small: '3',
-      shift: '#',
-    },
-    ru: {
+    {
+      code: 'Digit3',
       small: '3',
       shift: '№',
     },
-  },
-  {
-    code: 'Digit4',
-    en: {
-      small: '4',
-      shift: '$',
-    },
-    ru: {
+    {
+      code: 'Digit4',
       small: '4',
       shift: ';',
     },
-  },
-  {
-    code: 'Digit5',
-    en: {
+    {
+      code: 'Digit5',
       small: '5',
       shift: '%',
     },
-    ru: {
-      small: '5',
-      shift: '%',
-    },
-  },
-  {
-    code: 'Digit6',
-    en: {
-      small: '6',
-      shift: '^',
-    },
-    ru: {
+    {
+      code: 'Digit6',
       small: '6',
       shift: ':',
     },
-  },
-  {
-    code: 'Digit7',
-    en: {
-      small: '7',
-      shift: '&',
-    },
-    ru: {
+    {
+      code: 'Digit7',
       small: '7',
       shift: '?',
     },
-  },
-  {
-    code: 'Digit8',
-    en: {
+    {
+      code: 'Digit8',
       small: '8',
       shift: '*',
     },
-    ru: {
-      small: '8',
-      shift: '*',
-    },
-  },
-  {
-    code: 'Digit9',
-    en: {
+    {
+      code: 'Digit9',
       small: '9',
       shift: '(',
     },
-    ru: {
-      small: '9',
-      shift: '(',
-    },
-  },
-  {
-    code: 'Digit0',
-    en: {
+    {
+      code: 'Digit0',
       small: '0',
       shift: ')',
     },
-    ru: {
-      small: '0',
-      shift: ')',
-    },
-  },
-  {
-    code: 'Minus',
-    en: {
+    {
+      code: 'Minus',
       small: '-',
       shift: '_',
     },
-    ru: {
-      small: '-',
-      shift: '_',
-    },
-  },
-  {
-    code: 'Equal',
-    en: {
+    {
+      code: 'Equal',
       small: '=',
       shift: '+',
     },
-    ru: {
-      small: '=',
-      shift: '+',
-    },
-  },
-  {
-    code: 'Backspace',
-    en: {
+    {
+      code: 'Backspace',
       small: 'Backspace',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Backspace',
-      shift: null,
-    },
-  },
-  {
-    code: 'Tab',
-    en: {
+    {
+      code: 'Tab',
       small: 'Tab',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Tab',
-      shift: null,
-    },
-  },
-  {
-    code: 'KeyQ',
-    en: {
-      small: 'q',
-      shift: 'Q',
-    },
-    ru: {
+    {
+      code: 'KeyQ',
       small: 'й',
       shift: 'Й',
     },
-  },
-  {
-    code: 'KeyW',
-    en: {
-      small: 'w',
-      shift: 'W',
-    },
-    ru: {
+    {
+      code: 'KeyW',
       small: 'ц',
       shift: 'Ц',
     },
-  },
-  {
-    code: 'KeyE',
-    en: {
-      small: 'e',
-      shift: 'E',
-    },
-    ru: {
+    {
+      code: 'KeyE',
       small: 'у',
       shift: 'У',
     },
-  },
-  {
-    code: 'KeyR',
-    en: {
-      small: 'r',
-      shift: 'R',
-    },
-    ru: {
+    {
+      code: 'KeyR',
       small: 'к',
       shift: 'К',
     },
-  },
-  {
-    code: 'KeyT',
-    en: {
-      small: 't',
-      shift: 'T',
-    },
-    ru: {
+    {
+      code: 'KeyT',
       small: 'е',
       shift: 'Е',
     },
-  },
-  {
-    code: 'KeyY',
-    en: {
-      small: 'y',
-      shift: 'Y',
-    },
-    ru: {
+    {
+      code: 'KeyY',
       small: 'н',
       shift: 'Н',
     },
-  },
-  {
-    code: 'KeyU',
-    en: {
-      small: 'u',
-      shift: 'U',
-    },
-    ru: {
+    {
+      code: 'KeyU',
       small: 'г',
       shift: 'Г',
     },
-  },
-  {
-    code: 'KeyI',
-    en: {
-      small: 'i',
-      shift: 'I',
-    },
-    ru: {
+    {
+      code: 'KeyI',
       small: 'ш',
       shift: 'Ш',
     },
-  },
-  {
-    code: 'KeyO',
-    en: {
-      small: 'o',
-      shift: 'O',
-    },
-    ru: {
+    {
+      code: 'KeyO',
       small: 'щ',
       shift: 'Щ',
     },
-  },
-  {
-    code: 'KeyP',
-    en: {
-      small: 'p',
-      shift: 'P',
-    },
-    ru: {
+    {
+      code: 'KeyP',
       small: 'з',
       shift: 'З',
     },
-  },
-  {
-    code: 'BracketLeft',
-    en: {
-      small: '[',
-      shift: '{',
-    },
-    ru: {
+    {
+      code: 'BracketLeft',
       small: 'х',
       shift: 'Х',
     },
-  },
-  {
-    code: 'BracketRight',
-    en: {
-      small: ']',
-      shift: '}',
-    },
-    ru: {
+    {
+      code: 'BracketRight',
       small: 'ъ',
       shift: 'Ъ',
     },
-  },
-  {
-    code: 'Backslash',
-    en: {
-      small: '\\',
-      shift: '|',
-    },
-    ru: {
+    {
+      code: 'Backslash',
       small: '\\',
       shift: '/',
     },
-  },
-  {
-    code: 'Delete',
-    en: {
+    {
+      code: 'Delete',
       small: 'Del',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Del',
-      shift: null,
-    },
-  },
-  {
-    code: 'CapsLock',
-    en: {
+    {
+      code: 'CapsLock',
       small: 'CapsLock',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'CapsLock',
-      shift: null,
-    },
-  },
-  {
-    code: 'KeyA',
-    en: {
-      small: 'a',
-      shift: 'A',
-    },
-    ru: {
+    {
+      code: 'KeyA',
       small: 'ф',
       shift: 'Ф',
     },
-  },
-  {
-    code: 'KeyS',
-    en: {
-      small: 's',
-      shift: 'S',
-    },
-    ru: {
+    {
+      code: 'KeyS',
       small: 'ы',
       shift: 'Ы',
     },
-  },
-  {
-    code: 'KeyD',
-    en: {
-      small: 'd',
-      shift: 'D',
-    },
-    ru: {
+    {
+      code: 'KeyD',
       small: 'в',
       shift: 'В',
     },
-  },
-  {
-    code: 'KeyF',
-    en: {
-      small: 'f',
-      shift: 'F',
-    },
-    ru: {
+    {
+      code: 'KeyF',
       small: 'а',
       shift: 'А',
     },
-  },
-  {
-    code: 'KeyG',
-    en: {
-      small: 'g',
-      shift: 'G',
-    },
-    ru: {
+    {
+      code: 'KeyG',
       small: 'п',
       shift: 'П',
     },
-  },
-  {
-    code: 'KeyH',
-    en: {
-      small: 'h',
-      shift: 'H',
-    },
-    ru: {
+    {
+      code: 'KeyH',
       small: 'р',
       shift: 'Р',
     },
-  },
-  {
-    code: 'KeyJ',
-    en: {
-      small: 'j',
-      shift: 'J',
-    },
-    ru: {
+    {
+      code: 'KeyJ',
       small: 'о',
       shift: 'О',
     },
-  },
-  {
-    code: 'KeyK',
-    en: {
-      small: 'k',
-      shift: 'K',
-    },
-    ru: {
+    {
+      code: 'KeyK',
       small: 'л',
       shift: 'Л',
     },
-  },
-  {
-    code: 'KeyL',
-    en: {
-      small: 'l',
-      shift: 'L',
-    },
-    ru: {
+    {
+      code: 'KeyL',
       small: 'д',
       shift: 'Д',
     },
-  },
-  {
-    code: 'Semicolon',
-    en: {
-      small: ';',
-      shift: ':',
-    },
-    ru: {
+    {
+      code: 'Semicolon',
       small: 'ж',
       shift: 'Ж',
     },
-  },
-  {
-    code: 'Quote',
-    en: {
-      small: "'",
-      shift: '"',
-    },
-    ru: {
+    {
+      code: 'Quote',
       small: 'э',
       shift: 'Э',
     },
-  },
-  {
-    code: 'Enter',
-    en: {
+    {
+      code: 'Enter',
       small: 'Enter',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Enter',
-      shift: null,
-    },
-  },
-  {
-    code: 'ShiftLeft',
-    en: {
+    {
+      code: 'ShiftLeft',
       small: 'Shift',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Shift',
-      shift: null,
-    },
-  },
-  {
-    code: 'KeyZ',
-    en: {
-      small: 'z',
-      shift: 'Z',
-    },
-    ru: {
+    {
+      code: 'KeyZ',
       small: 'я',
       shift: 'Я',
     },
-  },
-  {
-    code: 'KeyX',
-    en: {
-      small: 'x',
-      shift: 'X',
-    },
-    ru: {
+    {
+      code: 'KeyX',
       small: 'ч',
       shift: 'Ч',
     },
-  },
-  {
-    code: 'KeyC',
-    en: {
-      small: 'c',
-      shift: 'C',
-    },
-    ru: {
+    {
+      code: 'KeyC',
       small: 'с',
       shift: 'С',
     },
-  },
-  {
-    code: 'KeyV',
-    en: {
-      small: 'v',
-      shift: 'V',
-    },
-    ru: {
+    {
+      code: 'KeyV',
       small: 'м',
       shift: 'М',
     },
-  },
-  {
-    code: 'KeyB',
-    en: {
-      small: 'b',
-      shift: 'B',
-    },
-    ru: {
+    {
+      code: 'KeyB',
       small: 'и',
       shift: 'И',
     },
-  },
-  {
-    code: 'KeyN',
-    en: {
-      small: 'n',
-      shift: 'N',
-    },
-    ru: {
+    {
+      code: 'KeyN',
       small: 'т',
       shift: 'Т',
     },
-  },
-  {
-    code: 'KeyM',
-    en: {
-      small: 'm',
-      shift: 'M',
-    },
-    ru: {
+    {
+      code: 'KeyM',
       small: 'ь',
       shift: 'Ь',
     },
-  },
-  {
-    code: 'Comma',
-    en: {
-      small: ',',
-      shift: '<',
-    },
-    ru: {
+    {
+      code: 'Comma',
       small: 'б',
       shift: 'Б',
     },
-  },
-  {
-    code: 'Period',
-    en: {
-      small: '.',
-      shift: '>',
-    },
-    ru: {
+    {
+      code: 'Period',
       small: 'ю',
       shift: 'Ю',
     },
-  },
-  {
-    code: 'Slash',
-    en: {
-      small: '/',
-      shift: '?',
-    },
-    ru: {
+    {
+      code: 'Slash',
       small: '.',
       shift: ',',
     },
-  },
-  {
-    code: 'ArrowUp',
-    en: {
+    {
+      code: 'ArrowUp',
       small: '&uarr;',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: '&uarr;',
-      shift: null,
-    },
-  },
-  {
-    code: 'ShiftRight',
-    en: {
+    {
+      code: 'ShiftRight',
       small: 'Shift',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Shift',
-      shift: null,
-    },
-  },
-  {
-    code: 'ControlLeft',
-    en: {
+    {
+      code: 'ControlLeft',
       small: 'Ctrl',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Ctrl',
-      shift: null,
-    },
-  },
-  {
-    code: 'MetaLeft',
-    en: {
+    {
+      code: 'MetaLeft',
       small: 'Win',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Win',
-      shift: null,
-    },
-  },
-  {
-    code: 'AltLeft',
-    en: {
+    {
+      code: 'AltLeft',
       small: 'Alt',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Alt',
-      shift: null,
-    },
-  },
-  {
-    code: 'Space',
-    en: {
+    {
+      code: 'Space',
       small: ' ',
       shift: null,
     },
-    ru: {
+    {
+      code: 'AltRight',
+      small: 'Alt',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'ArrowLeft',
+      small: '&larr;',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'ArrowDown',
+      small: '&darr;',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'ArrowRight',
+      small: '&rarr;',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'ControlRight',
+      small: 'Ctrl',
+      shift: null,
+      isFnKey: true,
+    },
+  ],
+  en: [
+    {
+      code: 'Backquote',
+      small: '`',
+      shift: '~',
+    },
+    {
+      code: 'Digit1',
+      small: '1',
+      shift: '!',
+    },
+    {
+      code: 'Digit2',
+      small: '2',
+      shift: '@',
+    },
+    {
+      code: 'Digit3',
+      small: '3',
+      shift: '#',
+    },
+    {
+      code: 'Digit4',
+      small: '4',
+      shift: '$',
+    },
+    {
+      code: 'Digit5',
+      small: '5',
+      shift: '%',
+    },
+    {
+      code: 'Digit6',
+      small: '6',
+      shift: '^',
+    },
+    {
+      code: 'Digit7',
+      small: '7',
+      shift: '&',
+    },
+    {
+      code: 'Digit8',
+      small: '8',
+      shift: '*',
+    },
+    {
+      code: 'Digit9',
+      small: '9',
+      shift: '(',
+    },
+    {
+      code: 'Digit0',
+      small: '0',
+      shift: ')',
+    },
+    {
+      code: 'Minus',
+      small: '-',
+      shift: '_',
+    },
+    {
+      code: 'Equal',
+      small: '=',
+      shift: '+',
+    },
+    {
+      code: 'Backspace',
+      small: 'Backspace',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'Tab',
+      small: 'Tab',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'KeyQ',
+      small: 'q',
+      shift: 'Q',
+    },
+    {
+      code: 'KeyW',
+      small: 'w',
+      shift: 'W',
+    },
+    {
+      code: 'KeyE',
+      small: 'e',
+      shift: 'E',
+    },
+    {
+      code: 'KeyR',
+      small: 'r',
+      shift: 'R',
+    },
+    {
+      code: 'KeyT',
+      small: 't',
+      shift: 'T',
+    },
+    {
+      code: 'KeyY',
+      small: 'y',
+      shift: 'Y',
+    },
+    {
+      code: 'KeyU',
+      small: 'u',
+      shift: 'U',
+    },
+    {
+      code: 'KeyI',
+      small: 'i',
+      shift: 'I',
+    },
+    {
+      code: 'KeyO',
+      small: 'o',
+      shift: 'O',
+    },
+    {
+      code: 'KeyP',
+      small: 'p',
+      shift: 'P',
+    },
+    {
+      code: 'BracketLeft',
+      small: '[',
+      shift: '{',
+    },
+    {
+      code: 'BracketRight',
+      small: ']',
+      shift: '}',
+    },
+    {
+      code: 'Backslash',
+      small: '\\',
+      shift: '|',
+    },
+    {
+      code: 'Delete',
+      small: 'Del',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'CapsLock',
+      small: 'CapsLock',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'KeyA',
+      small: 'a',
+      shift: 'A',
+    },
+    {
+      code: 'KeyS',
+      small: 's',
+      shift: 'S',
+    },
+    {
+      code: 'KeyD',
+      small: 'd',
+      shift: 'D',
+    },
+    {
+      code: 'KeyF',
+      small: 'f',
+      shift: 'F',
+    },
+    {
+      code: 'KeyG',
+      small: 'g',
+      shift: 'G',
+    },
+    {
+      code: 'KeyH',
+      small: 'h',
+      shift: 'H',
+    },
+    {
+      code: 'KeyJ',
+      small: 'j',
+      shift: 'J',
+    },
+    {
+      code: 'KeyK',
+      small: 'k',
+      shift: 'K',
+    },
+    {
+      code: 'KeyL',
+      small: 'l',
+      shift: 'L',
+    },
+    {
+      code: 'Semicolon',
+      small: ';',
+      shift: ':',
+    },
+    {
+      code: 'Quote',
+      small: "'",
+      shift: '"',
+    },
+    {
+      code: 'Enter',
+      small: 'Enter',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'ShiftLeft',
+      small: 'Shift',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'KeyZ',
+      small: 'z',
+      shift: 'Z',
+    },
+    {
+      code: 'KeyX',
+      small: 'x',
+      shift: 'X',
+    },
+    {
+      code: 'KeyC',
+      small: 'c',
+      shift: 'C',
+    },
+    {
+      code: 'KeyV',
+      small: 'v',
+      shift: 'V',
+    },
+    {
+      code: 'KeyB',
+      small: 'b',
+      shift: 'B',
+    },
+    {
+      code: 'KeyN',
+      small: 'n',
+      shift: 'N',
+    },
+    {
+      code: 'KeyM',
+      small: 'm',
+      shift: 'M',
+    },
+    {
+      code: 'Comma',
+      small: ',',
+      shift: '<',
+    },
+    {
+      code: 'Period',
+      small: '.',
+      shift: '>',
+    },
+    {
+      code: 'Slash',
+      small: '/',
+      shift: '?',
+    },
+    {
+      code: 'ArrowUp',
+      small: '&uarr;',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'ShiftRight',
+      small: 'Shift',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'ControlLeft',
+      small: 'Ctrl',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'MetaLeft',
+      small: 'Win',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'AltLeft',
+      small: 'Alt',
+      shift: null,
+      isFnKey: true,
+    },
+    {
+      code: 'Space',
       small: ' ',
       shift: null,
     },
-  },
-  {
-    code: 'AltRight',
-    en: {
+    {
+      code: 'AltRight',
       small: 'Alt',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Alt',
-      shift: null,
-    },
-  },
-  {
-    code: 'ArrowLeft',
-    en: {
+    {
+      code: 'ArrowLeft',
       small: '&larr;',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: '&larr;',
-      shift: null,
-    },
-  },
-  {
-    code: 'ArrowDown',
-    en: {
+    {
+      code: 'ArrowDown',
       small: '&darr;',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: '&darr;',
-      shift: null,
-    },
-  },
-  {
-    code: 'ArrowRight',
-    en: {
+    {
+      code: 'ArrowRight',
       small: '&rarr;',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: '&rarr;',
-      shift: null,
-    },
-  },
-  {
-    code: 'ControlRight',
-    en: {
+    {
+      code: 'ControlRight',
       small: 'Ctrl',
       shift: null,
+      isFnKey: true,
     },
-    ru: {
-      small: 'Ctrl',
-      shift: null,
-    },
-  },
-];
+  ],
+};
