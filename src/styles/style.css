@@ -93,3 +93,7 @@ kbd {
   border: 1px solid #070707;
   padding: 3px;
 }
+
+.keyboard__key.active {
+  background-color: yellowgreen;
+}

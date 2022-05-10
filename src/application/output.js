@@ -1,11 +1,12 @@
 import Control from '../common/control';
 
-export default class OutputField {
+export default class OutputField extends Control {
   constructor() {
-    this.field = new Control(null, 'textarea', 'output');
+    super(null, 'textarea', 'output');
 
-    [['placeholder', 'Start type something...'], ['rows', 5], ['cols', 50], ['spellcheck', false], ['autocorrect', 'off']].forEach(([attrName, attrValue]) => {
-      this.field.node.setAttribute(attrName, attrValue);
-    });
+    [['placeholder', 'Start typing something...'], ['spellcheck', false], ['autocorrect', 'off']]
+      .forEach(([attrName, attrValue]) => {
+        this.node.setAttribute(attrName, attrValue);
+      });
   }
 }
