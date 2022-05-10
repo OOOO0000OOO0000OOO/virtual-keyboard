@@ -9,7 +9,8 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "eslint": "eslint ./src/**/*.js",
-    "eslint:fix": "eslint ./src/**/*.js --fix"
+    "eslint:fix": "eslint ./src/**/*.js --fix",
+    "dev": "webpack-dev-server --open --hot"
   },
   "repository": {
     "type": "git",

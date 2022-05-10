@@ -1,0 +1,95 @@
+body > div {
+  margin: 0 auto;
+  font-family: "Helvetica", sans-serif;
+}
+
+body div .title {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(101,134,177,0.8);
+}
+
+body div .output {
+  -webkit-text-size-adjust: 100%;
+  font-family: inherit;
+  line-height: 1.15;
+  overflow: auto;
+  display: block;
+  width: 700px;
+  height: 200px;
+  margin: 10px auto 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: #444444;
+}
+
+.keyboard {
+  line-height: 1.15;
+  width: 704px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #7a7575;
+  border: 3px solid #070707;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px
+}
+
+.keyboard__row {
+  display: flex;
+  column-gap: 6px;
+  height: 40px;
+}
+
+.keyboard__key {
+  min-height: 40px;
+  min-width: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  display: block;
+  background: #494949;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  transition: border-radius 0.3s, background-color 0.3s;
+}
+
+.keyboard__key.fn__true {
+  background-color: #1a1a1a;
+}
+
+.keyboard__key.fn__true.key__Tab {
+  min-width: 50px;
+}
+
+.keyboard__key.fn__true.key__ShiftLeft,
+.keyboard__key.fn__true.key__CapsLock {
+  min-width: 100px;
+}
+
+.keyboard__key.fn__true.key__Delete,
+.keyboard__key.fn__true.key__Backspace,
+.keyboard__key.fn__true.key__Enter,
+.keyboard__key.fn__true.key__ShiftRight {
+  width: 100%;
+}
+
+.keyboard__key.key__Space {
+  width: 330px;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+kbd {
+  border: 1px solid #070707;
+  padding: 3px;
+}
