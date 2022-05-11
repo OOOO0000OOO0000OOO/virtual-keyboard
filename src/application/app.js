@@ -28,7 +28,7 @@ export default class Application extends Control {
       output.node,
       keyboard.container.node,
       new Control(this.node, 'p', 'subtitle', 'This keyboard is designed for the Windows OS.').node,
-      new Control(this.node, 'p', 'subtitle', 'Use left <kbd>Ctrl</kbd> + <kbd>Alt</kbd> to switch.').node,
+      new Control(this.node, 'p', 'subtitle', 'Use left <kbd>Ctrl</kbd> + <kbd>Alt</kbd> to switch layout.').node,
     );
 
     const controller = new Controller(keyboard, output);
