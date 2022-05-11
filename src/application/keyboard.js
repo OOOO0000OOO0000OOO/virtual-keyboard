@@ -6,7 +6,7 @@ export default class Keyboard {
     this.rows = rows;
     this.keys = keys;
 
-    this.keysLayout = 'en';
+    this.keysLayout = localStorage.getItem('ooo000oooLayout') || 'en';
     this.keysPressed = {};
     this.isCaps = false;
 
@@ -49,5 +49,10 @@ export default class Keyboard {
     });
     if (this.isCaps) this.switchCaps();
     if (this.shiftKey) this.switchCase();
+    this.setLayout();
+  }
+
+  setLayout() {
+    localStorage.setItem('ooo000oooLayout', this.keysLayout);
   }
 }
