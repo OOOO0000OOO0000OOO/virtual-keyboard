@@ -24,6 +24,9 @@ body div .output {
   padding: 10px;
   font-size: 18px;
   color: #444444;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: content-box;
+  resize: none;
 }
 
 .keyboard {
@@ -31,7 +34,7 @@ body div .output {
   width: 704px;
   margin: 0 auto;
   padding: 5px;
-  background: #7a7575;
+  background: #999898;
   border: 3px solid #070707;
   border-radius: 5px;
   display: flex;
@@ -59,6 +62,10 @@ body div .output {
   cursor: pointer;
   user-select: none;
   transition: border-radius 0.3s, background-color 0.3s;
+}
+
+.keyboard .keyboard__key:hover {
+  background-color: #666666;
 }
 
 .keyboard__key.fn__true {
@@ -94,6 +101,11 @@ kbd {
   padding: 3px;
 }
 
-.keyboard__key.active {
+.keyboard .keyboard__key.active {
   background-color: yellowgreen;
+}
+
+div.keyboard__key.fn__false.key__Space .letter{
+  width: 100%;
+  height: 100%;
 }
