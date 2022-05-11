@@ -30,4 +30,24 @@ export default class Keyboard {
     if (!this.keysPressed[eventCode]) return;
     delete this.keysPressed[eventCode];
   }
+
+  switchCase() {
+    this.buttons.map((button) => (button.switchCase()));
+  }
+
+  switchCaps() {
+    this.buttons.map((button) => (
+      button.small.toUpperCase() === button.shift ? button.switchCase() : button));
+  }
+
+  switchLayout() {
+    this.keysLayout = (this.keysLayout === 'en' ? 'ru' : 'en');
+    this.buttons.map((button) => {
+      if (button.isFnKey) return button;
+      const key = this.keys[this.keysLayout].find((_key) => _key.code === button.code);
+      return button.set(key);
+    });
+    if (this.isCaps) this.switchCaps();
+    if (this.shiftKey) this.switchCase();
+  }
 }
