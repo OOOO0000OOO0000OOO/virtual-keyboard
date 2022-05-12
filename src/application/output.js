@@ -20,6 +20,10 @@ export default class OutputField extends Control {
     const valueLength = this.node.value.length;
 
     this.outputHandlers = {
+      Tab: () => {
+        cursor += 1;
+        this.node.value = `${before}\t${after}`;
+      },
       ArrowLeft: () => {
         cursor = (cursor > 0 ? cursor - 1 : 0);
       },

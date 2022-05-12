@@ -64,7 +64,7 @@ export default class Controller {
 
     this.output.node.focus();
 
-    if (!event.isTrusted || (!key.isFnKey && event.isTrusted)) this.createOutputStream(key, event);
+    if (!event.isTrusted || (!key.isFnKey && event.isTrusted) || key.code === 'Tab') this.createOutputStream(key, event);
 
     this.keyboard.reset(event.code, key);
 
