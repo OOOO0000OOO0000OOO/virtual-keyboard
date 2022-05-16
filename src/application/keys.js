@@ -304,7 +304,7 @@ export default {
     {
       code: 'Space',
       small: ' ',
-      shift: null,
+      shift: ' ',
     },
     {
       code: 'AltRight',
@@ -642,7 +642,7 @@ export default {
     {
       code: 'Space',
       small: ' ',
-      shift: null,
+      shift: ' ',
     },
     {
       code: 'AltRight',
