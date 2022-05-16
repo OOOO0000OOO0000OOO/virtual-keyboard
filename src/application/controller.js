@@ -5,6 +5,7 @@ export default class Controller {
 
     document.onkeydown = this.handleDownEvent.bind(this);
     document.onkeyup = this.handleUpEvent.bind(this);
+    document.onkeypress = this.handlePressEvent.bind(this);
 
     this.keyboard.container.node.onmousedown = this.handleMouseDownEvent.bind(this);
     this.keyboard.container.node.onmouseup = this.handleMouseUpEvent.bind(this);
@@ -91,6 +92,17 @@ export default class Controller {
     const { code } = this.keyboard.buttons[buttonNodes.indexOf(event.target)];
 
     document.dispatchEvent(new KeyboardEvent('keydown', { code }));
+
+    if (code.match(/Shift|Alt|Caps|Control|Meta/)) return;
+
+    this.simulateKeyPress(code);
+    event.target.addEventListener('mouseleave', () => clearInterval(this.press));
+  }
+
+  simulateKeyPress(code) {
+    this.press = setInterval(() => {
+      document.dispatchEvent(new KeyboardEvent('keypress', { code }));
+    }, 150);
   }
 
   /**
@@ -99,6 +111,8 @@ export default class Controller {
    */
 
   handleMouseUpEvent(event) {
+    clearInterval(this.press);
+
     const buttonNodes = this.keyboard.buttons.map((btn) => btn.letter.node);
     if (!buttonNodes.includes(event.target)) return;
 
@@ -114,5 +128,18 @@ export default class Controller {
     const char = isFnKey ? '' : buttonNodes[this.keyboard.buttons.indexOf(key)];
 
     this.output.createOutput(event.code, char.textContent);
+  }
+
+  /**
+   *
+   * @param {KeyboardEvent} event
+   */
+
+  handlePressEvent(event) {
+    event.stopPropagation();
+    event.preventDefault();
+
+    const key = this.keyboard.buttons.find((_key) => _key.code === event.code);
+    this.createOutputStream(key, event);
   }
 }
